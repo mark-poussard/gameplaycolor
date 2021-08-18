@@ -32,6 +32,8 @@
         var self = this;
         self.onReset = undefined;
         self.onABStartSelect = undefined;
+        self.onExportGameState = undefined;
+
         self.willShow = willShow;
         self.didHide = didHide;
         self.screen = $('#screen-menu');
@@ -51,6 +53,16 @@
           }
           self.hide();
         }});
+        self.exportGameState = new App.Controls.Button($('#menu-button-export-state'), { touchUpInside: function () {
+          self.gameExportPopup.show();
+        }});
+
+        self.gameExportPopup = new App.GameStatePopup();
+        self.gameExportPopup.onReset = function() {
+          if(self.onReset !== undefined){
+            self.onReset();
+          }
+        };
       },
 
       hide: function() {

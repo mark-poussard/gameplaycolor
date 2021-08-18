@@ -28,6 +28,7 @@
           rel="apple-touch-startup-image">
 
     <link rel="stylesheet" href="css/menu.css" type="text/css">
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
     <link rel="stylesheet" href="css/switch.css" type="text/css">
     <link rel="stylesheet" href="css/cartridge.css" type="text/css">
     <link rel="stylesheet" href="css/segmented.css" type="text/css">
@@ -205,12 +206,24 @@
           <ul>
             <li id="menu-button-a-b-start-select">A + B + Start + Select</li>
             <li id="menu-button-reset">Reset</li>
+            <li id="menu-button-export-state">Handle Game State</li>
           </ul>
           <ul>
             <li id="menu-button-cancel" class="default">Cancel</li>
           </ul>
         </div>
       </div><!-- screen-menu -->
+
+      <div id="game-state-popup">
+        <div id="game-state-popup-content">
+          <h2>Export state</h2>
+          <input id="game-export-state">
+          <button id="game-export-copy-to-clipboard">Copy to clipboard</button>
+          <h2>Import state</h2>
+          <input id="game-import-state">
+          <button id="game-import-confirm">Import</button>
+        </div>
+      </div><!-- game-state-popup -->
 
       <div id="screen-sound" class="screen screen-sound hidden" style="display: none;">
         <div id="screen-sound-menu" class="menu menu-short hidden" style="display: none">
@@ -289,6 +302,7 @@
     <script type="text/javascript" src="js/pad.js"></script>
     <script type="text/javascript" src="js/settings.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/game-state-popup.js"></script>
     <script type="text/javascript" src="js/sound.js"></script>
     <script type="text/javascript" src="js/button.js"></script>
     <script type="text/javascript" src="js/switch.js"></script>
