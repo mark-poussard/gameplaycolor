@@ -1,6 +1,10 @@
-# Game Play Color
+Forked for my personal use so I can handle game states via simple copy/pasting.
 
-Forked for my personal use so I can handle game states via copy/pasting. 
+Hosted at : https://mark-poussard.github.io/gameplay/
+
+&#9888; **Use at your own risk.** &#9888;
+
+# Game Play Color
 
 A JavaScript Game Boy and Game Boy Color emulator for iOS, based on the [GameBoy-Online](https://github.com/taisel/GameBoy-Online) emulator core.
 
